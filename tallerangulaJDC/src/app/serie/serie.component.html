@@ -1,0 +1,41 @@
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">TV Series</a>
+
+  
+</nav>   
+   
+    
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Nombre</th>
+          <th class="h4">Canal</th>
+          <th class="h4">Temporadas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of series">
+          <td>
+            <dd>{{ s.codigo }}</dd>
+          </td>
+          <td>
+            <dd>{{ s.nombre }}</dd>
+          </td>
+          <td>
+            <dd>{{ s.canal }}</dd>
+          </td>
+          <td>
+            <dd>{{ s.temporadas }}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+  </div>
+
+
